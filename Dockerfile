@@ -22,5 +22,6 @@ WORKDIR $HOME
 RUN git clone -b develop https://github.com/periscope-ps/unis
 RUN cd unis && sudo python2 setup.py install && cd -
 
+ADD unis.cfg /etc/periscope/unis.cfg
 ADD run.sh .
 CMD bash run.sh
