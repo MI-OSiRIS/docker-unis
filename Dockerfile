@@ -1,4 +1,5 @@
 FROM python:3.6-stretch
+LABEL version="1.0-0"
 
 MAINTAINER Ezra Kissel <ezkissel@indiana.edu>
 
