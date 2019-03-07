@@ -59,6 +59,9 @@ Below is a snippet of Puppet code that can be used to instantiate the UNIS conta
 	}
 ```
 
+## Docker Environment Variables
+
+No environment variables effect the execution of the UNIS service. Use the configuration file to change settings.
 
 
 
