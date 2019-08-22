@@ -15,6 +15,8 @@ The UNIS server looks for a configuration file at `/etc/periscope/unis.cfg`  A d
                
 # root_urls is a comma-separated list of "parent" instances
 root_urls = http://unis.open.sice.indiana.edu:8888
+# a comma-separated list of community strings pushed to root instance
+communities = OSIRIS,SLATE
 
 #db_name    = unis_db                  ; Name of our database
 #db_host    = 127.0.0.1                ; Database host (e.g., MongoDB)
@@ -23,7 +25,7 @@ root_urls = http://unis.open.sice.indiana.edu:8888
 #summary_size              = 10
 #summary_collection_period = 3600      ; Summary interval (seconds)
 
-#use_ms      = false                    ; Enable MS registration
+use_ms      = false                    ; Enable MS registration
 
 [unis_ssl]
 #enable     = false                    ; Enable SSL connections
