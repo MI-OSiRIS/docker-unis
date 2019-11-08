@@ -1,4 +1,4 @@
-FROM python:3.6-stretch
+FROM python:2.7-stretch
 LABEL version="1.0-0"
 
 MAINTAINER Ezra Kissel <ezkissel@indiana.edu>
@@ -6,7 +6,7 @@ MAINTAINER Ezra Kissel <ezkissel@indiana.edu>
 EXPOSE 8888/tcp
 
 RUN apt-get update
-RUN apt-get -y install sudo mongodb redis-server python-setuptools python-pip python-m2crypto
+RUN apt-get -y install sudo mongodb redis-server python-setuptools python-pip
 
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/unis && \
