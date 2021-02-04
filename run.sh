@@ -9,4 +9,4 @@ sudo /etc/init.d/mongodb start
 sudo /etc/init.d/redis-server start
 
 echo "UNIS IP : `hostname --ip-address`"
-periscoped --port ${UNIS_PORT} -d DEBUG -c /etc/periscope/unis.cfg
+periscoped --port ${UNIS_PORT} -d DEBUG -c /etc/periscope/unis.cfg -S
