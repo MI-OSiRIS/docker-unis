@@ -5,10 +5,10 @@ MAINTAINER Jeremy Musser <jemusser@iu.edu>
 
 EXPOSE 8888/tcp
 
-RUN useradd -u 9999 -d /var/lib/mongodb -s /bin/false mongodb
-
 RUN apt-get update
-RUN apt-get -y install sudo mongodb redis-server 
+RUN apt-get -y install sudo mongodb redis-server
+
+RUN usermod -u 9999 mongodb
 
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/unis && \
