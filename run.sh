@@ -5,7 +5,7 @@ UNIS_PORT=8888
 
 [ ! -z "$PORT" ] && UNIS_PORT=$PORT
 
-sudo /etc/init.d/mongodb start
+sudo service mongodb start
 sudo /etc/init.d/redis-server start
 
 echo "UNIS IP : `hostname --ip-address`"
