@@ -10,7 +10,6 @@ RUN apt-get -y install sudo mongodb redis-server
 
 RUN usermod -u 9999 mongodb
 RUN chown mongodb:mongodb /var/lib/mongodb
-RUN chown mongodb:mongodb /run/mongodb
 RUN chown mongodb:mongodb /var/log/mongodb
 
 RUN export uid=1000 gid=1000 && \
